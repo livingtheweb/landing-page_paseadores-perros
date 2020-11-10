@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Web app de paseadores de perros</title>
+  <meta name="description" content="Una web responsiva, estilo Uber para perros">
 </head>
 <body>
+  <!-- Colocaré, luego, un bg estilo trama o dibujo -->
   <nav>
+    <!-- Sistema de grillas -->
+    <!-- container > row > col -->
+    <!-- El .container tendrá un ancho fijo en PX -->
+
     <!-- Menú hamburguesa -->
     <div>
       <span>=</span>
-    </div>
-   
+    </div>   
 
     <h1>
       <a href="">
@@ -24,27 +29,33 @@
       <li><a href="">¿Cómo funciona?</a></li>
       <li><a href="">Contacto</a></li>
     </ul>
+
+    <!-- Agregar redes sociales
+    --------------------------- -->
+
   </nav>
   <hr>
+  <!-- Coloqué todo el contenido dentro de HEADER
+  ----------------------------------------------- -->
   <header>
     <h2>Encabezado principal</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus molestias deserunt ea distinctio enim earum qui labore repellendus officiis amet, quam exercitationem, error aperiam id magnam odio voluptates ratione?</p>
+    
+
+    <div>
+      <a href="">Característica</a>
+      <a href="">Download</a>
+    </div>
+
+    <div>
+      <h3>Get Started</h3>
+      <form action="procesar-formulario.php" post="post">
+        <input type="text" placeholder="Nombre y apellido" required>
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Inscribirse</button>
+      </form>
+    </div>
   </header>
-
-  <div>
-    <a href="">Característica</a>
-    <a href="">Download</a>
-  </div>
-
-  <div>
-    <h3>Get Started</h3>
-    <form action="procesar-formulario.php" post="post">
-      <input type="text" placeholder="Nombre y apellido" required>
-      <input type="email" placeholder="Email" required>
-      <button type="submit">Inscribirse</button>
-    </form>
-  </div>
-
   
 </body>
 </html>
