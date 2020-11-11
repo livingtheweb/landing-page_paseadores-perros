@@ -4,58 +4,132 @@
   <meta charset="UTF-8">
   <title>Web app de paseadores de perros</title>
   <meta name="description" content="Una web responsiva, estilo Uber para perros">
+
+  <!-- Cargamos el favicon de la web -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Colocaré, luego, un bg estilo trama o dibujo -->
+  <!-- Al NAV le colocaré, luego, un bg -->
   <nav>
     <!-- Sistema de grillas -->
     <!-- container > row > col -->
     <!-- El .container tendrá un ancho fijo en PX -->
 
     <!-- Menú hamburguesa -->
-    <div>
-      <span>=</span>
-    </div>   
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <div>
+            <span>=</span>
+          </div>   
+        </div>
 
-    <h1>
-      <a href="">
-        <img src="images/2764.png" width="85" alt="">
-      </a>
-    </h1>
+        <!-- El menú quedará oculto -->
+        <ul>
+          <li><a href="#que-es">¿Qué es?</a></li>          
+          <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="mailto:info@livingthewebla.com">Contacto</a></li>
+        </ul>
 
-    <ul>
-      <li><a href="">¿Qué es?</a></li>
-      <li><a href="">Beneficios</a></li>
-      <li><a href="">¿Cómo funciona?</a></li>
-      <li><a href="">Contacto</a></li>
-    </ul>
-
-    <!-- Agregar redes sociales
-    --------------------------- -->
-
+      
+        <div class="col-2">
+          <h1>
+            <a href="">
+              <img src="images/2764.png" width="85" alt="">        
+            </a>
+          </h1>  
+        </div>  
+  
+        <!-- Redes sociales
+        --------------------------- -->
+        <div class="col-1">
+          <a href="https://www.facebook.com/" target="_blank">FB</a>
+          <a href="https://www.instagram.com/" target="_blank">ING</a>
+        </div>
+      </div> <!-- /.row --> 
+    </div> <!-- /.container -->
   </nav>
   <hr>
   <!-- Coloqué todo el contenido dentro de HEADER
   ----------------------------------------------- -->
-  <header>
-    <h2>Encabezado principal</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus molestias deserunt ea distinctio enim earum qui labore repellendus officiis amet, quam exercitationem, error aperiam id magnam odio voluptates ratione?</p>
-    
+  <main>
+    <header>
+      <div class="container">
+        <div class="row">
+          <section>
+            <article>
+              <div class="col-4">
+                <h2>Encabezado principal</h2>
+              </div>
+              <div class="col-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus molestias deserunt ea distinctio enim earum qui labore repellendus officiis amet, quam exercitationem, error aperiam id magnam odio voluptates ratione?</p>    
+              </div>
 
-    <div>
-      <a href="">Característica</a>
-      <a href="">Download</a>
-    </div>
+              <div class="col-2">
+                <a href="">Característica</a>
+              </div>
+              <div class="col-2">
+                <a href="">Download</a>
+              </div>
+            </article>       
 
-    <div>
-      <h3>Get Started</h3>
-      <form action="procesar-formulario.php" post="post">
-        <input type="text" placeholder="Nombre y apellido" required>
-        <input type="email" placeholder="Email" required>
-        <button type="submit">Inscribirse</button>
-      </form>
+            <div class="col-4">
+              <h3>Get Started</h3>
+              <form action="procesar-formulario.php" post="post">
+                <input type="text" placeholder="Nombre y apellido" required>
+                <input type="email" placeholder="Email" autofocus required>
+                
+                <!-- Esto es sólo a modo explicativo en tema formularios -->
+                <!-- <input type="date"> -->
+                <!-- <input type="color"> -->
+
+                <button type="submit">Inscribirse</button>
+                <!-- <button type="submit" disabled>Otro button</button> -->
+              </form>
+            </div> 
+        
+          </section>
+        </div> <!-- /.row --> 
+      </div> <!-- /.container -->
+    </header>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="section" id="beneficios">
+
+        </div>
+      </div>
     </div>
-  </header>
-  
+  </main>
+
+<footer>
+  <!-- Igual en todas las páginas -->
+</footer>
+
+<!-- Ventanas modales 
+---------------------- -->
+
+<!-- Modal que-es -->
+<div id="que-es" class="modal-mask">
+  <div class="content">
+    <a href="#/">X</a>
+    <h3>¿Qué es?</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam voluptates ipsam necessitatibus amet veritatis magni. Sunt perspiciatis labore et doloremque deleniti laborum, hic consequuntur quidem nobis explicabo fugit quos!</p>
+    <img src="" alt="">
+  </div>
+</div>
+
+<!-- Modal como-funciona -->
+<div id="como-funciona" class="modal-mask">
+  <div class="content">
+    <a href="#/">X</a>
+    <h3>¿Cómo funciona?</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquam voluptates ipsam necessitatibus amet veritatis magni. Sunt perspiciatis labore et doloremque deleniti laborum, hic consequuntur quidem nobis explicabo fugit quos!</p>
+    <img src="" alt="">
+  </div>
+</div>
+
+
 </body>
 </html>
