@@ -13,14 +13,14 @@
 </head>
 <body>
   <!-- Al NAV le colocaré, luego, un bg -->
-  <nav>
+  <nav class="navbar">
     <!-- Sistema de grillas -->
     <!-- container > row > col -->
     <!-- El .container tendrá un ancho fijo en PX -->
 
     <!-- Menú hamburguesa -->
     <div class="container">
-      <div class="row">
+      <div class="row clearfix">
         <div class="col-1">
           <div>
             <span>=</span>
@@ -28,12 +28,12 @@
         </div>
 
         <!-- El menú quedará oculto -->
-        <ul>
-          <li><a href="#que-es">¿Qué es?</a></li>          
-          <li><a href="#como-funciona">¿Cómo funciona?</a></li>
-          <li><a href="#beneficios">Beneficios</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="mailto:info@livingthewebla.com">Contacto</a></li>
+        <ul class="navbar-menu">
+          <li class="navbar-item"><a href="#que-es" class="navbar-link">¿Qué es?</a></li>          
+          <li class="navbar-item"><a href="#como-funciona" class="navbar-link">¿Cómo funciona?</a></li>
+          <li class="navbar-item"><a href="#beneficios" class="navbar-link">Beneficios</a></li>
+          <li class="navbar-item"><a href="#faq" class="navbar-link">FAQ</a></li>
+          <li class="navbar-item"><a href="mailto:info@livingthewebla.com" class="navbar-link">Contacto</a></li>
         </ul>
 
       
@@ -59,28 +59,34 @@
   ----------------------------------------------- -->
   <main>
     <header>
-      <div class="container">
-        <div class="row">
-          <section>
-            <article>
+      <div class="container">        
+          <section id="principal">
+            <div class="row clearfix">
               <div class="col-4">
-                <h2>Ganá clientes como paseador de perros</h2>
+                <article>
+                  <div class="row clearfix">
+                    <div class="col-4">
+                      <h2>Ganá clientes como paseador de perros</h2>
+                    </div>
+                    <div class="col-2">
+                      <p>Sumate a esta nueva comunidad de paseadores y ganá más dinero; nunca te faltará un cliente</p>    
+                    </div>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="col-2">
+                      <a href="#beneficios">Beneficios</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="assets/mi-documento.pdf" download="true">Download PDF</a>
+                    </div>
+                  </div>
+                </article> 
               </div>
-              <div class="col-2">
-                <p>Sumate a esta nueva comunidad de paseadores y ganá más dinero; nunca te faltará un cliente</p>    
-              </div>
-
-              <div class="col-2">
-                <a href="#beneficios">Beneficios</a>
-              </div>
-              <div class="col-2">
-                <a href="assets/mi-documento.pdf" download="true">Download PDF</a>
-              </div>
-            </article>       
+            </div>      
 
             <div class="col-4">
               <h3>Get Started</h3>
-              <form action="procesar-formulario.php" post="post">
+              <form action="procesar-formulario.php" post="post">             
                 <input type="text" placeholder="Nombre y apellido" required>
                 <input type="email" placeholder="Email" autofocus required>
                 
@@ -91,8 +97,7 @@
                 <button type="submit">Inscribirse</button>
                 <!-- <button type="submit" disabled>Otro button</button> -->
               </form>
-            </div> 
-        
+            </div>         
           </section>
         </div> <!-- /.row --> 
       </div> <!-- /.container -->

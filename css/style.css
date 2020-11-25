@@ -1,8 +1,97 @@
+/* Variables CSS */
+:root {
+
+}
+
+* {
+  
+}
+
+/* Base
+============================= */
 body {
   /* background-color: black; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size:16px; */
+  line-height: 1.5;
 }
 
+a {
+  color:#000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Helpers (clases de ayuda)
+============================= */
+.mt-15 {
+  margin-top:15px;
+}
+.pt-15 {
+  padding-top:15px;
+}
+.text-magenta {
+  color:magenta;
+}
+.text-green {
+  color:green;
+}
+.bg-gray {
+  background-color:#444;
+}
+
+/* Layout (grid-sistem)
+============================= */
+
+
+
+
+/* Components (btn, boxes, accordion, etc)
+=========================================== */
+ul.navbar-menu {
+  margin:0;
+  padding:0;
+  border:solid 1px red;
+}
+  .navbar-item {
+    margin-bottom:10px;
+  }
+    .navbar-link {
+      font-size:18px;
+      text-transform:uppercase;
+    }
+    .navbar-link:hover {
+      border-bottom:solid 3px #D95284;
+    }
+  
+
 nav {
-  border:solid 1px #000;
+
+}
+
+header {
+
+}
+
+.btn {
+  padding:8px 18px;
+  color:#000;
+  text-decoration:none;
+  border:solid 2px #F27E63;
+}
+  .btn-general {
+    background-color:#F27E63;
+  }
+  .btn-section {
+    background-color:#D95284;
+  }
+
+
+/* Pages/sections
+============================= */
+#principal {
+
 }
