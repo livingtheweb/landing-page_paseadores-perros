@@ -1,14 +1,21 @@
 /* Variables CSS */
 :root {
+  --bg-section-01: #4696e5;
+  --bg-section-02: #ffffff;
 
 }
 
 * {
-  
+  box-sizing:border-box;
 }
 
 /* Base
 ============================= */
+/* - Reset de los navegadores
+      > Usaremos https://necolas.github.io/normalize.css/
+    - typografía
+    - Seteos generales */
+
 body {
   /* background-color: black; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -20,13 +27,26 @@ a {
   color:#000;
   text-decoration: none;
 }
+p {
+  /* font-variant: small-caps; */
+  /* letter-spacing: 2px; */
+  /* text-decoration:underline wavy magenta; */
+}
+h2 {
+  font-variant: small-caps;
+
+}
 
 ul {
   list-style: none;
 }
 
-/* Helpers (clases de ayuda)
-============================= */
+/* Helpers (clases especiales de ayuda)
+======================================= */
+.clearfix {
+  overflow:hidden;
+}
+
 .mt-15 {
   margin-top:15px;
 }
@@ -42,45 +62,69 @@ ul {
 .bg-gray {
   background-color:#444;
 }
-
-/* Layout (grid-sistem)
-============================= */
-
-
-
-
-/* Components (btn, boxes, accordion, etc)
-=========================================== */
-ul.navbar-menu {
-  margin:0;
-  padding:0;
-  border:solid 1px red;
+.center-block {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
-  .navbar-item {
-    margin-bottom:10px;
-  }
-    .navbar-link {
-      font-size:18px;
-      text-transform:uppercase;
-    }
-    .navbar-link:hover {
-      border-bottom:solid 3px #D95284;
-    }
-  
-
-nav {
-
+.text-center {
+  text-align:center;
 }
 
-header {
 
+/* Layout (grid-system) // Grillas
+==================================== */
+.container {
+  width:350px;
+  height:auto;
+  margin:0px auto;
+  padding-left:15px;
+  padding-right:15px;
+  max-width:100%;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+ position:relative;
+ float:left;
+ min-height:1px;
+ padding-left:15px;
+ padding-right:15px;
 }
 
+.col-1 {
+  width:25%;
+}
+.col-2 {
+  width:50%;
+}
+.col-3 {
+  width:75%;
+}
+.col-4 {
+  width:100%;
+}
+
+
+
+/* Components (elementos estructurales, btn, boxes, accordion, emodal, etc
+   Elementos reutilizables mayormente
+==================================================================  */
 .btn {
+  /* Primero, declaraciones estructurales */
+  /* width:150px;
+  height:250px; */
+  display:inline-block;
   padding:8px 18px;
+  /* Segundo, declaraciones de estilo */
   color:#000;
-  text-decoration:none;
-  border:solid 2px #F27E63;
+  text-decoration:none;  
+  border:solid 2px #F27E63;  
 }
   .btn-general {
     background-color:#F27E63;
@@ -88,10 +132,41 @@ header {
   .btn-section {
     background-color:#D95284;
   }
+  .btn-beneficios {
+    background-color: #ffffff;
+    color: #4696e5;
+  }
+
+nav {
+
+}
+
+  ul.navbar-menu {
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:-514px;
+    border:solid 1px red;    
+  }
+    .navbar-item {
+      margin-bottom:10px;
+    }
+      .navbar-link {
+        font-size:18px;
+        text-transform:uppercase;
+      }
+      .navbar-link:hover {
+        border-bottom:solid 3px #D95284;
+      }
+
+header {
+
+}
+
 
 
 /* Pages/sections
 ============================= */
-#principal {
-
+#principal { 
+  /* padding:0 15px; */
 }
